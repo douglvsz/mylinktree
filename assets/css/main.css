@@ -1,0 +1,73 @@
+@import url(globals.css);
+
+.container{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    border: 3px solid var(--text-color);
+    border-radius: 20px;
+}
+.heading{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 4px solid var(--text-color);
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.text-field{
+    text-align: center;
+}
+.image-link img{
+    width: 100px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: .3s;
+    background: transparent;
+}
+.image-link img:hover{
+    background: #fff;
+}
+.box-link{
+    display: flex;
+    gap: 1rem;
+    place-items: center;
+    align-items: center;
+    border: 2px solid var(--text-color);
+    padding: .5rem .8rem;
+    margin: 1rem 0;
+    border-radius: 15px;
+    transition: .3s;
+}
+.box-link:hover{
+    background: #fff;
+    color: var(--bg-color);
+}
+.bx{
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+
+@media (max-width: 900px) {
+    .container{
+    width: 80%;
+    }
+    .box-link{
+        text-wrap: wrap;
+    }
+}
+@media (max-width: 412px) {
+    .container{
+    width: 90%;
+    padding: 1.5rem;
+    }
+
+}
+@media (max-width: 323px) {
+    .container{
+    width: 90%;
+    padding: 1rem;
+    }
+}
